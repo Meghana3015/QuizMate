@@ -1,0 +1,55 @@
+{
+  "id": "geography-basic",
+  "title": "World Geography Quiz",
+  "category": "geography",
+  "questions": [
+    {
+      "id": "geo-1",
+      "question": "What is the capital of Australia?",
+      "type": "multiple-choice",
+      "options": ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+      "correctAnswer": "Canberra",
+      "difficulty": "medium",
+      "points": 15,
+      "category": "geography"
+    },
+    {
+      "id": "geo-2",
+      "question": "Which is the longest river in the world?",
+      "type": "text-input",
+      "correctAnswer": "Nile",
+      "difficulty": "easy",
+      "points": 10,
+      "category": "geography"
+    },
+    {
+      "id": "geo-3",
+      "question": "How many continents are there?",
+      "type": "multiple-choice",
+      "options": ["5", "6", "7", "8"],
+      "correctAnswer": "7",
+      "difficulty": "easy",
+      "points": 10,
+      "category": "geography"
+    },
+    {
+      "id": "geo-4",
+      "question": "What is the smallest country in the world?",
+      "type": "text-input",
+      "correctAnswer": "Vatican City",
+      "difficulty": "medium",
+      "points": 15,
+      "category": "geography"
+    },
+    {
+      "id": "geo-5",
+      "question": "Which mountain range contains Mount Everest?",
+      "type": "multiple-choice",
+      "options": ["Alps", "Andes", "Himalayas", "Rocky Mountains"],
+      "correctAnswer": "Himalayas",
+      "difficulty": "easy",
+      "points": 10,
+      "category": "geography"
+    }
+  ]
+}

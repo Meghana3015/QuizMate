@@ -1,0 +1,55 @@
+{
+  "id": "history-basic",
+  "title": "World History Quiz",
+  "category": "history",
+  "questions": [
+    {
+      "id": "hist-1",
+      "question": "In which year did World War II end?",
+      "type": "multiple-choice",
+      "options": ["1944", "1945", "1946", "1947"],
+      "correctAnswer": "1945",
+      "difficulty": "easy",
+      "points": 10,
+      "category": "history"
+    },
+    {
+      "id": "hist-2",
+      "question": "Who was the first President of the United States?",
+      "type": "text-input",
+      "correctAnswer": "George Washington",
+      "difficulty": "easy",
+      "points": 10,
+      "category": "history"
+    },
+    {
+      "id": "hist-3",
+      "question": "Which ancient wonder of the world was located in Egypt?",
+      "type": "multiple-choice",
+      "options": ["Hanging Gardens", "Colossus of Rhodes", "Great Pyramid of Giza", "Lighthouse of Alexandria"],
+      "correctAnswer": "Great Pyramid of Giza",
+      "difficulty": "medium",
+      "points": 15,
+      "category": "history"
+    },
+    {
+      "id": "hist-4",
+      "question": "In which year did the Berlin Wall fall?",
+      "type": "text-input",
+      "correctAnswer": "1989",
+      "difficulty": "medium",
+      "points": 15,
+      "category": "history"
+    },
+    {
+      "id": "hist-5",
+      "question": "Who was known as the 'Iron Lady'?",
+      "type": "multiple-choice",
+      "options": ["Angela Merkel", "Margaret Thatcher", "Golda Meir", "Indira Gandhi"],
+      "correctAnswer": "Margaret Thatcher",
+      "difficulty": "medium",
+      "points": 15,
+      "category": "history"
+    }
+  ]
+}

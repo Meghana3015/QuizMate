@@ -1,0 +1,46 @@
+{
+  "categories": [
+    {
+      "id": "science",
+      "name": "Science",
+      "description": "General science questions covering physics, chemistry, and biology",
+      "icon": "🔬",
+      "color": "bg-blue-500"
+    },
+    {
+      "id": "history",
+      "name": "History",
+      "description": "World history and historical events",
+      "icon": "📚",
+      "color": "bg-amber-500"
+    },
+    {
+      "id": "geography",
+      "name": "Geography",
+      "description": "Countries, capitals, and geographical features",
+      "icon": "🌍",
+      "color": "bg-green-500"
+    },
+    {
+      "id": "literature",
+      "name": "Literature",
+      "description": "Famous books, authors, and literary works",
+      "icon": "📖",
+      "color": "bg-purple-500"
+    },
+    {
+      "id": "mathematics",
+      "name": "Mathematics",
+      "description": "Mathematical concepts and problem solving",
+      "icon": "🔢",
+      "color": "bg-red-500"
+    },
+    {
+      "id": "technology",
+      "name": "Technology",
+      "description": "Computer science and modern technology",
+      "icon": "💻",
+      "color": "bg-cyan-500"
+    }
+  ]
+}

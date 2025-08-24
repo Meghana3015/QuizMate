@@ -1,0 +1,37 @@
+{
+  "id": "daily-challenge-001",
+  "title": "Daily Challenge",
+  "category": "mixed",
+  "timeLimit": 300,
+  "questions": [
+    {
+      "id": "daily-1",
+      "question": "What is the largest mammal in the world?",
+      "type": "multiple-choice",
+      "options": ["African Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
+      "correctAnswer": "Blue Whale",
+      "difficulty": "easy",
+      "points": 20,
+      "category": "science"
+    },
+    {
+      "id": "daily-2",
+      "question": "In which year was the first iPhone released?",
+      "type": "text-input",
+      "correctAnswer": "2007",
+      "difficulty": "medium",
+      "points": 25,
+      "category": "technology"
+    },
+    {
+      "id": "daily-3",
+      "question": "What is the currency of Japan?",
+      "type": "multiple-choice",
+      "options": ["Won", "Yuan", "Yen", "Rupee"],
+      "correctAnswer": "Yen",
+      "difficulty": "easy",
+      "points": 20,
+      "category": "geography"
+    }
+  ]
+}
