@@ -1,21 +1,40 @@
-import React, { useState } from 'react';
-import { BookOpen, Mail, User } from 'lucide-react';
+import React, { useState } from "react";
+import { BookOpen, Mail, User } from "lucide-react";
 
 interface LoginProps {
   onLogin: (username: string, email: string) => void;
 }
 
 export default function Login({ onLogin }: LoginProps) {
-  const [username, setUsername] = useState('');
-  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (username.trim() && email.trim()) {
       setIsLoading(true);
-      await new Promise(resolve => setTimeout(resolve, 500)); // Simulate loading
-      onLogin(username.trim(), email.trim());
+      try {
+        const submission = await fetch("http://localhost:2006/auth/login", {
+          method: "POST",
+          headers: {
+            "content-Type": "application/json",
+          },
+          body: JSON.stringify({ username, email }),
+        });
+
+        if (submission.ok){
+          await new Promise((resolve) => setTimeout(resolve, 500)); // Simulate loading
+          onLogin(username.trim(), email.trim());
+        }
+        else{
+          alert("Login Failed !")
+        }
+
+      } catch (err) {
+         alert(`At login.tsx : Login Failed !${err}`)
+        console.log("From login.tsx : user info submission failed !");
+      }
       setIsLoading(false);
     }
   };
@@ -33,7 +52,9 @@ export default function Login({ onLogin }: LoginProps) {
             <h1 className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
               QuizMaster
             </h1>
-            <p className="text-gray-600 mt-2">Test your knowledge and compete with others</p>
+            <p className="text-gray-600 mt-2">
+              Test your knowledge and compete with others
+            </p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -74,9 +95,9 @@ export default function Login({ onLogin }: LoginProps) {
             <button
               type="submit"
               disabled={isLoading}
-              className="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white py-3 px-4 rounded-lg font-medium hover:from-purple-700 hover:to-blue-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              className=" bg-blue-300 w-full bg-gradient-to-r from-purple-600 to-blue-600 text-black-500 border  py-3 px-4 rounded-lg font-medium hover:from-purple-700 hover:to-blue-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 transition-all disabled:opacity-50 disabled:cursor-not-allowed "
             >
-              {isLoading ? 'Signing In...' : 'Start Quiz Adventure'}
+              {isLoading ? "Signing In..." : "Start Quiz Adventure"}
             </button>
           </form>
 
